@@ -1,0 +1,842 @@
+*{
+    padding: 0px; 
+    margin: 0px; 
+    box-sizing: border-box;    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+    position: relative;
+    width: 1440px;
+    height: 2111px;
+    background: #F5F5F5;
+    margin: 20px auto;    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 1440px;
+    height: 467px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}   
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 1440px;
+    height: 115px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    
+}
+nav section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 63px;
+    width: 1136px;
+    height: 115px;  
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.logo-buscar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.logo{
+    width: 176px;
+    height: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.barra-buscar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 393px;
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 20px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.input-buscar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 329px;
+    height: 16px;
+    flex: none;
+    border: transparent;
+    order: 0;
+    flex-grow: 1;
+    background: #F5F5F5;
+}
+.input-buscar ::placeholder{
+    width: 138px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.boton-login{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 182px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.promo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+    width: 1440px;
+    height: 352px; 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../imagenes/banner.png"); 
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.promo div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 170px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.promo div h2{
+    width: 751px;
+    height: 61px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+.promo div p{
+    width: 751px;
+    height: 26px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.promo div button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 129px;
+    height: 51px;
+    background: #2A7AE4;
+    border: transparent;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.promo div button p{
+    width: 110px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 340px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.texto-categoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 871px;
+    width: 1133px;
+    height: 38px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.texto-categoria h2{
+    
+    width: 148px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.texto-categoria a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 97px;
+    height: 24px;
+    flex: none;
+    text-decoration: none;
+    order: 1;
+    flex-grow: 0;
+    
+}
+
+.texto-categoria a p{
+    width: 97px;
+    height: 24px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 252px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 176px;
+    height: 252px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card div img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 176px;
+    height: 174px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.card div h4{
+    width: 176px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.card div p{
+    width: 176px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+} 
+.card div a{
+    width: 120px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    flex: none;
+    text-decoration: none;
+    order: 3;
+    flex-grow: 0;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 1440px;
+    height: 470px;
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 20px, auto;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    gap: 115px;
+    width: 1440px;
+    height: 368px;
+    background: #EAF2FD;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 112px;
+    width: 1136px;
+    height: 240px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.contenido .logo{
+    width: 176px;
+    height: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.contenido ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 176px;
+    height: 234px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    list-style: none;
+    
+}
+
+.contenido ul li{
+    width: 176px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+.contenido ul li a{
+    text-decoration: none;
+    color: #464646;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 560px;
+    height: 240px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+form h2{
+    width: 560px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.campos-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 560px;
+    height: 154px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.input-container{
+    width: 560px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.etiqueta{
+    width: 536px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-left: 5px;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 536px;
+    height: 30px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    border: transparent;
+    margin-left: 5px;
+}
+.input-container ::placeholder{
+    width: 130px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.input:focus, .textarea:focus {
+    outline:none;
+} /*para que desaparezca el recuadro cuando me pocisiono dentro del input*/
+.input-message-error, .textarea-message-error{
+    display: none;
+}
+textarea{
+    width: 560px;
+    height: 82px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    border: transparent;
+}
+.textarea-container ::placeholder{
+    width: 304px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color:#464646;
+    flex: none;
+    padding-top: 10px;
+    order: 0;
+    flex-grow: 0;                                               
+}
+.enviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 144px;
+    height: 51px;
+    background: #2A7AE4;
+    flex: none;
+    border: transparent;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    order: 2;
+    flex-grow: 0;                               
+}
+.programado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+    width: 1440px;
+    height: 102px;
+    background: #FFFFFF;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.programado p{
+    width: 229px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+/*hasta 768pixeles de pantalla*/
+@media screen and (max-width:768px){
+    body{
+        position: relative;
+        width: 768px;
+        height: 1964px;
+        margin: 0 auto;
+        gap: 5px;
+    }
+    header{
+        width: 768px;
+        height: 430px;
+    }
+    nav{
+        width: 768px;
+        height: 72px;
+    }
+    nav section{
+        padding: 16px 32px;
+        width: 768px;
+        height: 72px;
+        align-self: stretch;
+    }
+    .logo-buscar{
+        width: 28px;
+        height: 28px;
+    }
+    .logo{
+        width: 100px;
+        height: 28px;
+    }
+    .barra-buscar{
+        width: 272px;
+        height: 40px;
+    }
+    .input-buscar{
+        width: 208px;
+        height: 16px;
+    }
+    .boton-login{      
+        padding: 12px 16px;
+        width: 166px;
+        height: 40px;
+    }
+        
+    .boton-login button{
+        width: 38px;
+        height: 16px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .promo{
+        width: 768px;
+        height: 352px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../imagenes/banner-tablet.jpg"); 
+    }
+    .promo div{
+        width: 704px;
+        height: 159px;
+    }
+    .promo div h2{
+        width: 704px;
+        height: 61px;
+    }
+    .promo div p{
+        width: 704px;
+        height: 26px;
+    }
+    .promo div button{
+        padding:12px 16px;
+        width: 118px;
+        height: 40px;
+    }
+    .promo div button p{
+        width: 86px;
+        height: 16px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .categoria{
+        padding: 17px;
+        width: 768px;
+        height: 358px;
+    }
+    .texto-categoria{
+        width: 704px;
+        height: 26px;
+        gap: 0px;
+    }
+    
+    .texto-categoria h2{        
+        width: 102px;
+        height: 26px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .texto-categoria a p{
+        width: 80px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+    }    
+    .productos {
+        width: 704px;
+        height: 252px;
+        gap: 5px;
+    }
+    
+    
+    .productos .resp-invisible{
+        display: none;
+    }
+    .productos li img{
+        width: 164px;
+        height: 174px;
+    }
+    .productos li h4{
+        width: 164px;
+        height: 16px;
+    }    
+    .productos li p{
+        width: 164px;
+        height: 19px;
+    } 
+    .productos li a{
+        width: 120px;
+        height: 19px;
+    }    
+   
+    .rodape{
+        width: 768px;
+        height: 470px;
+    }    
+    footer{
+        padding: 32px;
+        gap: 115px;
+        width: 768px;
+        height: 364px;
+        order: 5;
+    }
+    .contenido{
+        gap: 16px;
+        width: 704px;
+        height: 300px;
+        flex-grow: 1;
+    }
+    .contenido .logo{
+        width: 176px;
+        height: 50px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .izquierda{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 254px;
+        height: 300px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }    
+    form{
+        width: 434px;
+        height: 229px;
+        order: 1;
+        flex-grow: 1;
+    }
+    form h2{
+        width: 434px;
+        height: 19px;
+    }
+    .campos-form{
+        width: 434px;
+        height: 154px;
+    }
+    .input-container{
+        width: 434px;
+        height: 56px;
+    }    
+    .etiqueta{
+        width: 410px;
+        height: 16px;
+    }
+    .input{       
+        width: 410px;
+        height: 30px;
+    }
+    textarea{
+        width: 434px;
+        height: 82px;
+        flex-grow: 1;
+   
+    }
+    .enviar{
+        padding:12px 16px;
+        width: 133px;
+        height: 40px;                      
+    }
+    .programado{
+        width: 768px;
+        order: 6;
+    
+    }
+    
+}
