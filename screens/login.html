@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/_reset.css">
+    <link rel="stylesheet" href="../assets/css/estilos-login.css">
+    <link rel="stylesheet" href="../assets/css/estilos-validar.css">
+    <title>Alura Geek</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <section>
+              
+                <div class="logo-buscar" >
+                    <a href="../index.html"><img class="logo"  src="../assets/imagenes/Logo.png" alt="" ></a>
+                    <div class="barra-buscar">
+                        <input  name="buscador" type="text" id="buscar" class="input-buscar" placeholder="  ¿Qué deseas buscar?" maxlength="50" data-buscador>
+                        <img class="logo-buscar" src="../assets/imagenes/Vector.png" alt="">
+                    </div>
+                </div>    
+            </section> 
+        </nav>
+        
+        
+    </header>
+    <form class="login"> 
+        <h2>Iniciar Sesión</h2>
+        
+        <input name="email" id="email" class="input-correo" type="email" placeholder="Escriba su correo" required  data-tipo="email"  data-form-usuario >
+        <span class="input-message-error">Este campo no es valido</span>
+       
+
+        <input name="password" id="password" required class="input-contraseña" type="password" placeholder="Escriba su contraseña"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password" data-form-contraseña >
+        <span class="input-message-error">Este campo no es valido</span>
+
+        <input class="button-entrar" type="submit" value="Entrar" id = "enviar-login">
+    </form>
+   
+    <section class="rodape">
+        <footer>
+            <section class="contenido">
+            <div class="izquierda">
+                <div class="logo">
+                    <img src="../assets/imagenes/Logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="">Quienes Somos</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Programa de fidelidad</a></li>
+                    <li><a href="">Nuestras tiendas</a></li>
+                    <li><a href="">Quiero ser franquiciario</a></li>
+                    <li><a href="">Anuncie aquí</a></li>
+                </ul>
+            </div>
+            <form>            
+                <h2>Hable con nosotros</h2>
+
+                <div class="campos-form">
+                    <div class="input-container">
+                        <label for="nombre" class="etiqueta">Nombre</label>
+                        <input  name="name" type="text" id="nombre" class="input" required data-tipo="nombre"  placeholder="Pablo Fernandez" maxlength="50">
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="textarea-container">   
+                        <textarea name="mensaje" id="mensaje" class="textarea" placeholder="  Escribe tu mensaje" data-tipo="elmensaje" maxlength="300" required></textarea>
+                        <span class="textarea-message-error">Este campo no es valido</span>
+                    </div>
+                </div>
+                        <input type="submit" value="Enviar Mensaje"class="enviar">
+               
+            </form>
+            </section>
+        </footer>
+        <div class="programado">
+            <p class="footer">Programado por María Soledad Catalano - Curso Alura Julio 2022</p>   
+        </div>
+    </section>
+    <script src="../js/login.js"></script>
+    <script type ="module" src="../controllers/buscador.controller.js"></script>
+    <script type ="module" src="../controllers/buscar.controller.js"></script>
+    <script type="module" src="../js/app.js" ></script>
+    
+</body>
+
+</html>

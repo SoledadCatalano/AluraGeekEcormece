@@ -1,0 +1,685 @@
+*{
+    padding: 0px; 
+    margin: 0px; 
+    box-sizing: border-box;    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+    position: relative;
+    width: 1440px;
+    height: 2111px;
+    background: #F5F5F5;
+    margin: 0px auto;    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 1440px;
+    height: 120px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 1440px;
+    height: 115px;
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    
+}
+nav section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 63px;
+    width: 1136px;
+    height: 115px;  
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.logo-buscar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.logo{
+    width: 176px;
+    height: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.barra-buscar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 393px;
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 20px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.input-buscar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 329px;
+    height: 16px;
+    flex: none;
+    border: transparent;
+    order: 0;
+    flex-grow: 1;
+    background: #F5F5F5;
+}
+.input-buscar ::placeholder{
+    width: 138px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.titulo-agregar{
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    margin-bottom: 20px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.imagen-agregar{
+    text-align: center;
+ }
+ .imagen-drop{
+     width: 200px;
+     height: 200px;
+     background-color: #fdfdfd;
+     border: 2px dashed #C8C8C8;
+     align-items:center;
+ }
+ .imagen-drop-img{
+     width: 60px;
+     height: 60px;
+ }
+ 
+ .imagen-drop-texto{
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+ }
+ 
+ .imagen-boton{
+     width: 200px;
+     height: 70px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .agregar__imagen__boton{
+     display: none;
+ }
+ 
+ .agregar__imagen__boton__texto {
+     border: 1px solid #2A7AE4;
+     padding: 15px 15px;
+     color: #2A7AE4;
+     cursor: pointer;
+     text-align: center;
+     margin-top: 30px;
+ }
+.form-agregar{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 50px;
+}
+.boton-agregar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 559px;
+    height: 51px;
+    background: #2A7AE4;
+    flex: none;
+    order: 6;
+    align-self: stretch;
+    flex-grow: 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: transparent;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 1440px;
+    height: 470px;
+    position: absolute;
+    left: 0px;
+    top: 740px;
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 20px, auto;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    gap: 115px;
+    width: 1440px;
+    height: 368px;
+    background: #EAF2FD;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 112px;
+    width: 1136px;
+    height: 240px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.contenido .logo{
+    width: 176px;
+    height: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.contenido ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 176px;
+    height: 234px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    list-style: none;
+    
+}
+
+.contenido ul li{
+    width: 176px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+.contenido ul li a{
+    text-decoration: none;
+    color: #464646;
+}
+
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 560px;
+    height: 240px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.formulario-contacto h2{
+    width: 560px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.campos-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 560px;
+    height: 154px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.input-container{
+    width: 560px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-top:10px ;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.etiqueta{
+    width: 536px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-left: 5px;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+    width: 536px;
+    height: 30px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    border: transparent;
+    margin-left: 5px;
+}
+.input-container ::placeholder{
+    width: 400px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.input:focus, .textarea:focus {
+    outline:none;
+} /*para que desaparezca el recuadro cuando me pocisiono dentro del input*/
+.input-message-error, .textarea-message-error{
+    display: none;
+}
+textarea{
+    width: 560px;
+    height: 82px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    border: transparent;
+}
+.textarea-container ::placeholder{
+    width: 304px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color:#464646;
+    flex: none;
+    padding-top: 10px;
+    order: 0;
+    flex-grow: 0;                                               
+}
+.enviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 144px;
+    height: 51px;
+    background: #2A7AE4;
+    flex: none;
+    border: transparent;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    order: 2;
+    flex-grow: 0;                               
+}
+.programado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+    width: 1440px;
+    height: 102px;
+    background: #FFFFFF;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.programado p{
+    width: 229px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+/*hasta 768pixeles de pantalla*/
+@media screen and (max-width:768px){
+    body{
+        position: relative;
+        width: 768px;
+        height: 1964px;
+        margin: 0 auto;
+        gap: 5px;
+    }
+    header{
+        width: 768px;
+        height: 430px;
+    }
+    nav{
+        width: 768px;
+        height: 72px;
+    }
+    nav section{
+        padding: 16px 32px;
+        width: 768px;
+        height: 72px;
+        align-self: stretch;
+    }
+    .logo-buscar{
+        width: 28px;
+        height: 28px;
+    }
+    .logo{
+        width: 100px;
+        height: 28px;
+    }
+    .barra-buscar{
+        width: 272px;
+        height: 40px;
+    }
+    .input-buscar{
+        width: 208px;
+        height: 16px;
+    }
+    .login{
+        position: absolute;
+        width: 423px;
+        height: 291px;
+        left: calc(50% - 423px/2 - 0.5px);
+        top: 100px;
+    }
+    .login h2{
+        position: absolute;
+        width: 131px;
+        height: 29px;
+        left: 150px;
+        top: 100px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #464646;
+    }
+    .login .input-correo{
+        position: absolute;
+        width: 423px;
+        height: 63.13px;
+        left: calc(50% - 423px/2 - 0.5px);
+        top: 150px;
+        background: #FFFFFF;
+        border-radius: 4px;
+    }
+    .input-correo::placeholder{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+        position: absolute;
+        width: 399px;
+        height: 20px;
+        left: 12px;
+        top: 18.11px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        
+    }
+    .login .input-contraseña{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 423px;
+        height: 63px;
+        left: calc(50% - 423px/2 - 0.5px);
+        top: 250px;
+    }
+    
+    .input-contraseña::placeholder{
+        width: 304px;
+        height: 20px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #A2A2A2;
+    }
+    .button-entrar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 10px;
+        position: absolute;
+        width: 423px;
+        height: 62px;
+        left: calc(50% - 423px/2 - 0.5px);
+        top: 350px;
+        background: #2A7AE4;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+   
+    .rodape{
+        width: 768px;
+        height: 470px;
+    }    
+    footer{
+        padding: 32px;
+        gap: 115px;
+        width: 768px;
+        height: 364px;
+        order: 5;
+    }
+    .contenido{
+        gap: 16px;
+        width: 704px;
+        height: 300px;
+        flex-grow: 1;
+    }
+    .contenido .logo{
+        width: 176px;
+        height: 50px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .izquierda{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 254px;
+        height: 300px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }    
+    form{
+        width: 434px;
+        height: 229px;
+        order: 1;
+        flex-grow: 1;
+    }
+    form h2{
+        width: 434px;
+        height: 19px;
+    }
+    .campos-form{
+        width: 434px;
+        height: 154px;
+    }
+    .input-container{
+        width: 434px;
+        height: 56px;
+    }    
+    .etiqueta{
+        width: 410px;
+        height: 16px;
+    }
+    .input{       
+        width: 410px;
+        height: 30px;
+    }
+    textarea{
+        width: 434px;
+        height: 82px;
+        flex-grow: 1;
+   
+    }
+    .enviar{
+        padding:12px 16px;
+        width: 133px;
+        height: 40px;                      
+    }
+    .programado{
+        width: 768px;
+        order: 6;
+    
+    }
+    
+}

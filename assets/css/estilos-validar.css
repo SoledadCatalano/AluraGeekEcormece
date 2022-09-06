@@ -1,0 +1,39 @@
+.input-message-error{
+    display: none;
+}
+.textarea-message-error{
+  display: none;
+}
+.input-container--invalid {
+    margin-bottom: 0.5rem;
+  }
+  /*
+  .input-container--invalid .input {
+    border: 1px solid #df2525;
+    border-radius: 7px;
+  }
+  */
+  .input-container--invalid .input-label {
+    color: #df2525;
+    font-family: 'Raleway';
+    font-size: 14px;
+  }
+  
+  .input-container--invalid .input-message-error {
+    color: #df2525;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-family: 'Raleway';
+    font-size: 14px;
+  }
+
+  
+.textarea-container--invalid .textarea-message-error {
+    display: block;
+    color: #df2525;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-family: 'Raleway';
+    font-size: 14px;
+  }

@@ -21,7 +21,7 @@ header{
     align-items: flex-start;
     padding: 0px;
     width: 1440px;
-    height: 150px;
+    height: 120px;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -118,94 +118,195 @@ nav section{
     order: 0;
     flex-grow: 0;
 }
-.titulo-productos{
+
+.boton-login{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+    width: 182px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.titulo-producto{
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    margin-bottom: 20px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.form-producto{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 50px;
+}
+.imagen-producto img{
+    margin-top: 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.producto{
+    width: 560px;
+    height: 65px;
+    border-radius: 4px;
+    margin-top:10px ;
+    font-family: 'Raleway';
+    color: #464646;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.producto h3{
+    margin-left:5px;
+}
+.producto-descripcion{
+    width: 560px;
+    height: 80px;
+    border-radius: 4px;
+    margin-top:30px ;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.etiqueta{
+    width: 536px;
+    height: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-left: 5px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 340px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.texto-categoria{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 300px;
-    width: 1095px;
-    margin-bottom: 20px;
-    height: 51px;
+    gap: 871px;
+    width: 1133px;
+    height: 38px;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
-.titulo-productos h2{
-    width: 293px;
+.texto-categoria h2{
+    
+    width: 148px;
     height: 38px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 38px;
     color: #464646;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
-.titulo-productos a{
+.texto-categoria a{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 16px;
-   
-    width: 163px;
-    height: 51px;
-    background: #2A7AE4;
+    padding: 0px;
+    gap: 8px;
+    width: 97px;
+    height: 24px;
     flex: none;
+    text-decoration: none;
     order: 1;
     flex-grow: 0;
+    
+}
+
+.texto-categoria a p{
+    width: 97px;
+    height: 24px;
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: #2A7AE4;
 }
-
-.seccion-producto{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: 1136px;
-    height: 2000px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
- 
-}
-.productos{
-    width: 1136px;
-    height: 2000px;   
-}
-
 
 .card{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 8px;
-    flex: none;
-    order: 0;
-    flex-grow: 0; 
+    gap: 16px;
+    width: 1136px;
     flex-wrap: wrap;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
-.li-imagenes{
+.card div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
     width: 176px;
-    height: 174px;
-   
+    height: 252px;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
-.imagen{
-    position:absolute;
+
+.card div img{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -219,28 +320,7 @@ nav section{
     order: 0;
     flex-grow: 0;
 }
-.img-borrar{
-    position: relative;
-    width: 24px;
-    height: 24px;    
-    left: 55%;
-    top: 5%;    
-}
-.img-borrar img{
-    width: 24px;
-    height: 24px;    
-}
-
-.img-editar{
-    position: relative;
-    width: 24px;
-    height: 24px;
-    left: 65%;
-    top: 5%;
-    
-}
-
-.card h4{
+.card div h4{
     width: 176px;
     height: 16px;
     font-family: 'Raleway';
@@ -254,7 +334,7 @@ nav section{
     align-self: stretch;
     flex-grow: 0;
 }
-.card p{
+.card div p{
     width: 176px;
     height: 19px;
     font-family: 'Raleway';
@@ -268,7 +348,7 @@ nav section{
     align-self: stretch;
     flex-grow: 0;
 } 
-.card a{
+.card div a{
     width: 120px;
     height: 19px;
     font-family: 'Raleway';
@@ -282,6 +362,7 @@ nav section{
     order: 3;
     flex-grow: 0;
 }
+
 .rodape{
     display: flex;
     flex-direction: column;
@@ -289,6 +370,8 @@ nav section{
     padding: 0px;
     width: 1440px;
     height: 470px;
+    position: relative;
+    left: 0px;
     flex: none;
     order: 4;
     align-self: stretch;
@@ -360,7 +443,7 @@ footer{
     color: #464646;
 }
 
-form{
+.formulario-contacto{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -373,7 +456,7 @@ form{
     flex-grow: 0;
 }
 
-form h2{
+.formulario-contacto h2{
     width: 560px;
     height: 19px;
     font-family: 'Raleway';
@@ -406,6 +489,7 @@ form h2{
     height: 56px;
     background: #FFFFFF;
     border-radius: 4px;
+    margin-top:10px ;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -433,7 +517,7 @@ form h2{
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 4px;
+    gap: 14px;
     width: 536px;
     height: 30px;
     flex: none;
@@ -444,7 +528,7 @@ form h2{
     margin-left: 5px;
 }
 .input-container ::placeholder{
-    width: 130px;
+    width: 400px;
     height: 20px;
     font-family: 'Raleway';
     font-style: normal;
@@ -543,3 +627,215 @@ textarea{
     flex-grow: 0;
 }
 
+
+/*hasta 768pixeles de pantalla*/
+@media screen and (max-width:768px){
+    body{
+        position: relative;
+        width: 768px;
+        height: 1964px;
+        margin: 0 auto;
+        gap: 5px;
+    }
+    header{
+        width: 768px;
+        height: 430px;
+    }
+    nav{
+        width: 768px;
+        height: 72px;
+    }
+    nav section{
+        padding: 16px 32px;
+        width: 768px;
+        height: 72px;
+        align-self: stretch;
+    }
+    .logo-buscar{
+        width: 28px;
+        height: 28px;
+    }
+    .logo{
+        width: 100px;
+        height: 28px;
+    }
+    .barra-buscar{
+        width: 272px;
+        height: 40px;
+    }
+    .input-buscar{
+        width: 208px;
+        height: 16px;
+    }
+    .login{
+        position: absolute;
+        width: 423px;
+        height: 291px;
+        left: calc(50% - 423px/2 - 0.5px);
+        top: 100px;
+    }
+    .login h2{
+        position: absolute;
+        width: 131px;
+        height: 29px;
+        left: 150px;
+        top: 100px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #464646;
+    }
+    .login .input-correo{
+        position: absolute;
+        width: 423px;
+        height: 63.13px;
+        left: calc(50% - 423px/2 - 0.5px);
+        top: 150px;
+        background: #FFFFFF;
+        border-radius: 4px;
+    }
+    .input-correo::placeholder{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+        position: absolute;
+        width: 399px;
+        height: 20px;
+        left: 12px;
+        top: 18.11px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        
+    }
+    .login .input-contraseña{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 423px;
+        height: 63px;
+        left: calc(50% - 423px/2 - 0.5px);
+        top: 250px;
+    }
+    
+    .input-contraseña::placeholder{
+        width: 304px;
+        height: 20px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #A2A2A2;
+    }
+    .button-entrar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 10px;
+        position: absolute;
+        width: 423px;
+        height: 62px;
+        left: calc(50% - 423px/2 - 0.5px);
+        top: 350px;
+        background: #2A7AE4;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+   
+    .rodape{
+        width: 768px;
+        height: 470px;
+    }    
+    footer{
+        padding: 32px;
+        gap: 115px;
+        width: 768px;
+        height: 364px;
+        order: 5;
+    }
+    .contenido{
+        gap: 16px;
+        width: 704px;
+        height: 300px;
+        flex-grow: 1;
+    }
+    .contenido .logo{
+        width: 176px;
+        height: 50px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .izquierda{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 254px;
+        height: 300px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }    
+    form{
+        width: 434px;
+        height: 229px;
+        order: 1;
+        flex-grow: 1;
+    }
+    form h2{
+        width: 434px;
+        height: 19px;
+    }
+    .campos-form{
+        width: 434px;
+        height: 154px;
+    }
+    .input-container{
+        width: 434px;
+        height: 56px;
+    }    
+    .etiqueta{
+        width: 410px;
+        height: 16px;
+    }
+    .input{       
+        width: 410px;
+        height: 30px;
+    }
+    textarea{
+        width: 434px;
+        height: 82px;
+        flex-grow: 1;
+   
+    }
+    .enviar{
+        padding:12px 16px;
+        width: 133px;
+        height: 40px;                      
+    }
+    .programado{
+        width: 768px;
+        order: 6;
+    
+    }
+    
+}

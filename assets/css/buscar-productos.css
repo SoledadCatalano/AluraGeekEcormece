@@ -8,24 +8,12 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    gap: 64px;
+    gap: 25px;
     position: relative;
     width: 1440px;
     height: 2111px;
     background: #F5F5F5;
     margin: 0px auto;    
-}
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    width: 1440px;
-    height: 150px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 nav{
     display: flex;
@@ -118,22 +106,124 @@ nav section{
     order: 0;
     flex-grow: 0;
 }
-.titulo-productos{
+.boton-login{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 300px;
-    width: 1095px;
-    margin-bottom: 20px;
+    padding: 16px;
+    gap: 10px;
+    width: 182px;
     height: 51px;
+    border: 1px solid #2A7AE4;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.promo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+    width: 1440px;
+    height: 352px; 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../imagenes/banner.png"); 
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.promo div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    height: 170px;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
-.titulo-productos h2{
-    width: 293px;
+.promo div h2{
+    width: 751px;
+    height: 61px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+.promo div p{
+    width: 751px;
+    height: 26px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.promo div button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 129px;
+    height: 51px;
+    background: #2A7AE4;
+    border: transparent;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.promo div button p{
+    width: 110px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1136px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.texto-categoria{
+    padding: 40px 0;
+    width: 1133px;
     height: 38px;
     font-family: 'Raleway';
     font-style: normal;
@@ -144,68 +234,64 @@ nav section{
     flex: none;
     order: 0;
     flex-grow: 0;
+    margin-bottom: 20px;
 }
-.titulo-productos a{
+.texto-categoria a{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 16px;
-   
-    width: 163px;
-    height: 51px;
-    background: #2A7AE4;
+    padding: 0px;
+    gap: 8px;
+    width: 110px;
+    height: 24px;
     flex: none;
+    text-decoration: none;
     order: 1;
     flex-grow: 0;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #FFFFFF;
+    
 }
 
-.seccion-producto{
+.texto-categoria a p{
+    width: 120px;
+    height: 24px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+    text-align: center;
+}
+.flecha{
+    width: 20px;
+    height: 20px;
+}
+.card{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
     width: 1136px;
-    height: 2000px;
+    flex-wrap: wrap;
     flex: none;
     order: 1;
     flex-grow: 0;
- 
 }
-.productos{
-    width: 1136px;
-    height: 2000px;   
-}
-
-
-.card{
+.card div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    flex: none;
-    order: 0;
-    flex-grow: 0; 
-    flex-wrap: wrap;
-}
-.li-imagenes{
     width: 176px;
-    height: 174px;
-   
+    height: 252px;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
-.imagen{
-    position:absolute;
+
+.card div img{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -219,28 +305,7 @@ nav section{
     order: 0;
     flex-grow: 0;
 }
-.img-borrar{
-    position: relative;
-    width: 24px;
-    height: 24px;    
-    left: 55%;
-    top: 5%;    
-}
-.img-borrar img{
-    width: 24px;
-    height: 24px;    
-}
-
-.img-editar{
-    position: relative;
-    width: 24px;
-    height: 24px;
-    left: 65%;
-    top: 5%;
-    
-}
-
-.card h4{
+.card div h4{
     width: 176px;
     height: 16px;
     font-family: 'Raleway';
@@ -254,7 +319,7 @@ nav section{
     align-self: stretch;
     flex-grow: 0;
 }
-.card p{
+.card div p{
     width: 176px;
     height: 19px;
     font-family: 'Raleway';
@@ -268,7 +333,7 @@ nav section{
     align-self: stretch;
     flex-grow: 0;
 } 
-.card a{
+.card div a{
     width: 120px;
     height: 19px;
     font-family: 'Raleway';
@@ -288,7 +353,7 @@ nav section{
     align-items: flex-start;
     padding: 0px;
     width: 1440px;
-    height: 470px;
+    height: 570px;
     flex: none;
     order: 4;
     align-self: stretch;
@@ -303,7 +368,7 @@ footer{
     padding: 64px;
     gap: 115px;
     width: 1440px;
-    height: 368px;
+    height: 450px;
     background: #EAF2FD;
     flex: none;
     order: 0;
@@ -318,7 +383,7 @@ footer{
     padding: 0px;
     gap: 112px;
     width: 1136px;
-    height: 240px;
+    height: 340px;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -367,7 +432,7 @@ form{
     padding: 0px;
     gap: 8px;
     width: 560px;
-    height: 240px;
+    height: 340px;
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -375,7 +440,7 @@ form{
 
 form h2{
     width: 560px;
-    height: 19px;
+    height: 25px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -397,9 +462,8 @@ form h2{
     width: 560px;
     height: 154px;
     flex: none;
-    order: 1;
     align-self: stretch;
-    flex-grow: 0;
+   
 }
 .input-container{
     width: 560px;
@@ -407,9 +471,8 @@ form h2{
     background: #FFFFFF;
     border-radius: 4px;
     flex: none;
-    order: 0;
     align-self: stretch;
-    flex-grow: 0;
+  
 }
 .etiqueta{
     width: 536px;
@@ -423,9 +486,7 @@ form h2{
     align-items: center;
     color: #A2A2A2;
     flex: none;
-    order: 0;
     align-self: stretch;
-    flex-grow: 0;
     margin-left: 5px;
 }
 .input{
@@ -437,7 +498,6 @@ form h2{
     width: 536px;
     height: 30px;
     flex: none;
-    order: 1;
     align-self: stretch;
     flex-grow: 0;
     border: transparent;
@@ -455,24 +515,21 @@ form h2{
     align-items: center;
     color: #464646;
     flex: none;
-    order: 0;
-    flex-grow: 0;
+   
 }
 .input:focus, .textarea:focus {
     outline:none;
 } /*para que desaparezca el recuadro cuando me pocisiono dentro del input*/
-.input-message-error, .textarea-message-error{
-    display: none;
-}
+
+
 textarea{
     width: 560px;
     height: 82px;
     background: #FFFFFF;
     border-radius: 4px;
     flex: none;
-    order: 0;
     align-self: stretch;
-    flex-grow: 1;
+
     border: transparent;
 }
 .textarea-container ::placeholder{
@@ -488,8 +545,7 @@ textarea{
     color:#464646;
     flex: none;
     padding-top: 10px;
-    order: 0;
-    flex-grow: 0;                                               
+                                           
 }
 .enviar{
     display: flex;
@@ -497,7 +553,7 @@ textarea{
     justify-content: center;
     align-items: center;
     padding: 16px;
-    gap: 10px;
+    gap: 20px;
     width: 144px;
     height: 51px;
     background: #2A7AE4;
@@ -509,8 +565,8 @@ textarea{
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    order: 2;
-    flex-grow: 0;                               
+    margin-top: 35px;
+                             
 }
 .programado{
     display: flex;
@@ -543,3 +599,214 @@ textarea{
     flex-grow: 0;
 }
 
+
+/*hasta 768pixeles de pantalla*/
+@media screen and (max-width:768px){
+    body{
+        position: relative;
+        width: 768px;
+        height: 1964px;
+        margin: 0 auto;
+        gap: 5px;
+    }
+    header{
+        width: 768px;
+        height: 430px;
+    }
+    nav{
+        width: 768px;
+        height: 72px;
+    }
+    nav section{
+        padding: 16px 32px;
+        width: 768px;
+        height: 72px;
+        align-self: stretch;
+    }
+    .logo-buscar{
+        width: 28px;
+        height: 28px;
+    }
+    .logo{
+        width: 100px;
+        height: 28px;
+    }
+    .barra-buscar{
+        width: 272px;
+        height: 40px;
+    }
+    .input-buscar{
+        width: 208px;
+        height: 16px;
+    }
+    .boton-login{      
+        padding: 12px 16px;
+        width: 166px;
+        height: 40px;
+    }
+        
+    .boton-login button{
+        width: 38px;
+        height: 16px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .promo{
+        width: 768px;
+        height: 352px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../imagenes/banner-tablet.jpg"); 
+    }
+    .promo div{
+        width: 704px;
+        height: 159px;
+    }
+    .promo div h2{
+        width: 704px;
+        height: 61px;
+    }
+    .promo div p{
+        width: 704px;
+        height: 26px;
+    }
+    .promo div button{
+        padding:12px 16px;
+        width: 118px;
+        height: 40px;
+    }
+    .promo div button p{
+        width: 86px;
+        height: 16px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .categoria{
+        padding: 17px;
+        width: 768px;
+        height: 358px;
+    }
+    .texto-categoria{
+        width: 704px;
+        height: 26px;
+        gap: 0px;
+    }
+    
+    .texto-categoria h2{        
+        width: 102px;
+        height: 26px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .texto-categoria a p{
+        width: 80px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+    }    
+    .productos {
+        width: 704px;
+        height: 252px;
+        gap: 5px;
+    }
+    
+    
+    .productos .resp-invisible{
+        display: none;
+    }
+    .productos li img{
+        width: 164px;
+        height: 174px;
+    }
+    .productos li h4{
+        width: 164px;
+        height: 16px;
+    }    
+    .productos li p{
+        width: 164px;
+        height: 19px;
+    } 
+    .productos li a{
+        width: 120px;
+        height: 19px;
+    }    
+   
+    .rodape{
+        width: 768px;
+        height: 470px;
+    }    
+    footer{
+        padding: 32px;
+        gap: 115px;
+        width: 768px;
+        height: 364px;
+        order: 5;
+    }
+    .contenido{
+        gap: 16px;
+        width: 704px;
+        height: 300px;
+        flex-grow: 1;
+    }
+    .contenido .logo{
+        width: 176px;
+        height: 50px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .izquierda{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 254px;
+        height: 300px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }    
+    form{
+        width: 434px;
+        height: 229px;
+        order: 1;
+        flex-grow: 1;
+    }
+    form h2{
+        width: 434px;
+        height: 19px;
+    }
+    .campos-form{
+        width: 434px;
+        height: 154px;
+    }
+    .input-container{
+        width: 434px;
+        height: 56px;
+    }    
+    .etiqueta{
+        width: 410px;
+        height: 16px;
+    }
+    .input{       
+        width: 410px;
+        height: 30px;
+    }
+    textarea{
+        width: 434px;
+        height: 82px;
+        flex-grow: 1;
+   
+    }
+    .enviar{
+        padding:12px 16px;
+        width: 133px;
+        height: 40px;                      
+    }
+    .programado{
+        width: 768px;
+        order: 6;
+    
+    }
+    
+}

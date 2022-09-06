@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/_reset.css">
+    <link rel="stylesheet" href="../assets/css/estilo-adm-productos.css">
+    <title>Alura Geek</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <section>
+              
+                <div class="logo-buscar" >
+                  <a href="../index.html"><img class="logo" src="../assets/imagenes/Logo.png" alt=""></a>
+                    <div class="barra-buscar">
+                        <input  name="buscador" type="text" id="buscar" class="input-buscar" placeholder="  ¿Qué deseas buscar?" maxlength="50" data-buscador>
+                        <img class="logo-buscar" src="../assets/imagenes/Vector.png" alt="">
+                    </div>
+                </div>    
+
+               
+
+            </section> 
+        </nav>  
+    </header>
+
+    <main>
+        <section class="titulo-productos">
+            <h2>Todos los Productos</h2>
+            <a href="agregar-producto.html">Agregar Producto</a>
+        </section>
+
+        <section class="seccion-producto">
+            <div class="productos">
+            
+                <div class="card" datos-productos-admin>
+                </div>
+              
+            </div>
+     
+        </section>
+    </main>
+    
+    </footer>
+    <div class="programado">
+        <p class="footer">Programado por María Soledad Catalano - Curso Alura Julio 2022</p>   
+    </div>
+</section>
+
+<script type= "module" src="../controllers/admin-productos-controller.js"></script>
+<script type ="module" src="../controllers/buscador.controller.js"></script>
+    <script type ="module" src="../controllers/buscar.controller.js"></script>
+   
+<script type="module" src="/js/app.js" type="module" ></script>
+</body>
+
+</html>

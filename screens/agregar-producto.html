@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="../assets/css/estilos-validar.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto.css">
+
+    <title>Alura Geek</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+          <section>
+              
+            <div class="logo-buscar" >
+              <a href="../index.html"><img class="logo" src="../assets/imagenes/Logo.png" alt=""></a>
+                <div class="barra-buscar">
+                    <input  name="buscador" type="text" id="buscar" class="input-buscar" placeholder="  ¿Qué deseas buscar?" maxlength="50" data-buscador>
+                    <img class="logo-buscar" src="../assets/imagenes/Vector.png" alt="">
+                </div>
+            </div>    
+
+       
+
+        </section> 
+        </nav>
+        
+        
+    </header>
+    <main class="">
+
+      <h2 class="titulo-agregar">Agregar producto</h2>
+      <section class="form-agregar">
+        
+        <div class="imagen-agregar">
+            <div class="imagen-drop" data-drag-area>
+              <img class="imagen-drop-img" src="../assets/imagenes/add.png" alt="icono agrega imagen">
+            
+              <p class="imagen-drop-texto">Arrastre para agregar una imagen para el producto</p>
+            </div>
+            
+              <div class="imagen-boton">
+                  <label for="agregar__imagen__boton" class="agregar__imagen__boton__texto">Busque en su dispositivo</label>
+              <input type="file" name="imagen" id="agregar__imagen__boton"  class="agregar__imagen__boton" name="fileinput" />
+          </div>
+        </div>
+
+    
+          <form action="" data-form>
+          
+            <div class="input-container">
+                <label class="etiqueta" for="url-imagen">URL de imagen</label>
+                <input
+                name="url-imagen"
+                id="id-url"
+                class="input"
+                type="text"
+                placeholder="escribe la url de la imagen"
+                data-url
+              />
+            <span class="input-message-error">Este campo no es valido</span>
+            </div>
+
+            <div class="input-container">
+                <label class="etiqueta" for="categoria">Categoría</label>
+                
+                <select name="categoria"
+                id="id-categoria"
+                class="input"
+                type="text"
+                placeholder="Escribe la categoria"
+                required
+                data-categoria>
+                  <option value=""selected>--Seleccione--</option>
+                  <option value="Star wars">Star wars</option>
+                  <option value="Consolas">Consolas</option>
+                  <option value="Varios">Varios</option>                 
+                </select>
+             
+                <span class="input-message-error">Este campo no es valido</span>
+              </div>
+
+              <div class="input-container">
+                <label class="etiqueta" for="nombre">Nombre del Producto</label>
+                <input
+                  name="nombre"
+                  id="id-nombre"
+                  class="input"
+                  type="text"
+                  placeholder="Producto XYZ"
+                  maxlength="20"
+                  required
+                  data-name
+                />
+              
+                <span class="input-message-error">Este campo no es valido</span>
+              </div>
+
+
+            <div class="input-container">
+                <label class="etiqueta" for="precio">Precio del producto</label>
+                <input
+                name="precio"
+                id="id-precio"
+                class="input"
+                type="number"
+                placeholder="$60.00"
+                required
+                data-precio
+              />
+           
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            
+            <div class="input-container descripcion">
+              <input
+                class="input"
+                name="descripcion"
+                id="id-descripcion"
+                placeholder="Descripción del producto"
+                maxlength="150"
+                required
+                data-descripcion
+              />
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <button type="submit" class="boton-agregar" data-form-btn>Agregar producto</button>
+          </form>
+        </section>  
+      </main>
+   
+    <section class="rodape">
+        <footer>
+            <section class="contenido">
+            <div class="izquierda">
+                <div class="logo">
+                    <img src="../assets/imagenes/Logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="">Quienes Somos</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Programa de fidelidad</a></li>
+                    <li><a href="">Nuestras tiendas</a></li>
+                    <li><a href="">Quiero ser franquiciario</a></li>
+                    <li><a href="">Anuncie aquí</a></li>
+                </ul>
+            </div>
+            <form class="form">            
+              <h2>Hable con nosotros</h2>
+
+              <div class="campos-form">
+                  <div class="input-container">
+                      <label for="nombre" class="etiqueta">Nombre</label>
+                      <input  name="name" type="text" id="nombre" class="input" required data-tipo="nombre"  placeholder="Pablo Fernandez" maxlength="50">
+                      <span class="input-message-error">Este campo no es valido</span>
+                  </div>
+
+                  <div class="textarea-container">   
+                      <textarea name="mensaje" id="mensaje" class="textarea" placeholder="  Escribe tu mensaje" data-tipo="elmensaje" maxlength="300" required></textarea>
+                      <span class="textarea-message-error">Este campo no es valido</span>
+                  </div>
+              </div>
+                      <input type="submit" value="Enviar Mensaje"class="enviar">
+             
+          </form>
+            </section>
+        </footer>
+        <div class="programado">
+            <p class="footer">Programado por María Soledad Catalano - Curso Alura Julio 2022</p>   
+        </div>
+    </section>
+
+   
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script type="module" src="../controllers/crear-producto-controller.js"></script>
+  <script type ="module" src="../controllers/buscador.controller.js"></script>
+  <script type ="module" src="../controllers/buscar.controller.js"></script>
+  <script type="module" src="../js/app.js" ></script>
+  <script src="../js/drag-drop-img.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+
+</html>

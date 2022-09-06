@@ -11,9 +11,9 @@ body{
     gap: 64px;
     position: relative;
     width: 1440px;
-    height: 2111px;
+    height: 3000px;
     background: #F5F5F5;
-    margin: 20px auto;    
+    margin: 0px auto;    
 }
 header{
     display: flex;
@@ -23,9 +23,8 @@ header{
     width: 1440px;
     height: 120px;
     flex: none;
-    order: 0;
     align-self: stretch;
-    flex-grow: 0;
+   
 }
 nav{
     display: flex;
@@ -38,9 +37,7 @@ nav{
     height: 115px;
     background: #FFFFFF;
     flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+  
     
 }
 nav section{
@@ -54,8 +51,7 @@ nav section{
     height: 115px;  
     background: #FFFFFF;
     flex: none;
-    order: 0;
-    flex-grow: 0;
+   
 }
 .logo-buscar{
     display: flex;
@@ -66,15 +62,12 @@ nav section{
     width: 24px;
     height: 24px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
+   
 }
 .logo{
     width: 176px;
     height: 50px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 .barra-buscar{
     display: flex;
@@ -87,8 +80,6 @@ nav section{
     background: #F5F5F5;
     border-radius: 20px;
     flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 .input-buscar{
     display: flex;
@@ -99,8 +90,6 @@ nav section{
     height: 16px;
     flex: none;
     border: transparent;
-    order: 0;
-    flex-grow: 1;
     background: #F5F5F5;
 }
 .input-buscar ::placeholder{
@@ -115,22 +104,18 @@ nav section{
     align-items: center;
     color: #A2A2A2;
     flex: none;
-    order: 0;
-    flex-grow: 0;
+
 }
 .login{
-    position: absolute;
     width: 423px;
-    height: 291px;
+    height: 400px;
     left: calc(50% - 423px/2 - 0.5px);
-    top: 100px;
+    
 }
 .login h2{
-    position: absolute;
     width: 131px;
     height: 29px;
     left: 150px;
-    top: 100px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -138,22 +123,19 @@ nav section{
     color: #464646;
 }
 .login .input-correo{
-    position: absolute;
+    
     width: 423px;
-    height: 63.13px;
+    height: 64px;
     left: calc(50% - 423px/2 - 0.5px);
-    top: 150px;
     background: #FFFFFF;
     border-radius: 4px;
     border: 4px #464646;
 }
 .input-correo::placeholder{
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 4px;
-    position: absolute;
     width: 399px;
     height: 20px;
     left: 12px;
@@ -170,7 +152,6 @@ nav section{
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    position: absolute;
     width: 423px;
     height: 63px;
     left: calc(50% - 423px/2 - 0.5px);
@@ -192,13 +173,10 @@ nav section{
     color: #A2A2A2;
 }
 .button-entrar{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px 16px;
     gap: 10px;
-    position: absolute;
     width: 423px;
     height: 62px;
     left: calc(50% - 423px/2 - 0.5px);
@@ -218,14 +196,9 @@ nav section{
     align-items: flex-start;
     padding: 0px;
     width: 1440px;
-    height: 470px;
-    position: absolute;
-    left: 0px;
-    top: 588px;
+    height: 570px;
     flex: none;
-    order: 4;
     align-self: stretch;
-    flex-grow: 0;
     margin: 20px, auto;
 }
 footer{
@@ -236,12 +209,10 @@ footer{
     padding: 64px;
     gap: 115px;
     width: 1440px;
-    height: 368px;
+    height: 450px;
     background: #EAF2FD;
     flex: none;
-    order: 0;
     align-self: stretch;
-    flex-grow: 0;
 
 }
 .contenido{
@@ -251,17 +222,15 @@ footer{
     padding: 0px;
     gap: 112px;
     width: 1136px;
-    height: 240px;
+    height: 340px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
+ 
 }
 .contenido .logo{
     width: 176px;
     height: 50px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
+   
 }
 .contenido ul{
     display: flex;
@@ -272,8 +241,6 @@ footer{
     width: 176px;
     height: 234px;
     flex: none;
-    order: 1;
-    flex-grow: 0;
     list-style: none;
     
 }
@@ -300,15 +267,13 @@ form{
     padding: 0px;
     gap: 8px;
     width: 560px;
-    height: 240px;
+    height: 340px;
     flex: none;
-    order: 2;
-    flex-grow: 0;
 }
 
 form h2{
     width: 560px;
-    height: 19px;
+    height: 25px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -316,9 +281,6 @@ form h2{
     line-height: 19px;
     color: #464646;
     flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .campos-form{
@@ -330,9 +292,8 @@ form h2{
     width: 560px;
     height: 154px;
     flex: none;
-    order: 1;
     align-self: stretch;
-    flex-grow: 0;
+   
 }
 .input-container{
     width: 560px;
@@ -340,9 +301,8 @@ form h2{
     background: #FFFFFF;
     border-radius: 4px;
     flex: none;
-    order: 0;
     align-self: stretch;
-    flex-grow: 0;
+  
 }
 .etiqueta{
     width: 536px;
@@ -356,9 +316,7 @@ form h2{
     align-items: center;
     color: #A2A2A2;
     flex: none;
-    order: 0;
     align-self: stretch;
-    flex-grow: 0;
     margin-left: 5px;
 }
 .input{
@@ -370,7 +328,6 @@ form h2{
     width: 536px;
     height: 30px;
     flex: none;
-    order: 1;
     align-self: stretch;
     flex-grow: 0;
     border: transparent;
@@ -388,24 +345,21 @@ form h2{
     align-items: center;
     color: #464646;
     flex: none;
-    order: 0;
-    flex-grow: 0;
+   
 }
 .input:focus, .textarea:focus {
     outline:none;
 } /*para que desaparezca el recuadro cuando me pocisiono dentro del input*/
-.input-message-error, .textarea-message-error{
-    display: none;
-}
+
+
 textarea{
     width: 560px;
     height: 82px;
     background: #FFFFFF;
     border-radius: 4px;
     flex: none;
-    order: 0;
     align-self: stretch;
-    flex-grow: 1;
+
     border: transparent;
 }
 .textarea-container ::placeholder{
@@ -421,8 +375,7 @@ textarea{
     color:#464646;
     flex: none;
     padding-top: 10px;
-    order: 0;
-    flex-grow: 0;                                               
+                                           
 }
 .enviar{
     display: flex;
@@ -430,7 +383,7 @@ textarea{
     justify-content: center;
     align-items: center;
     padding: 16px;
-    gap: 10px;
+    gap: 20px;
     width: 144px;
     height: 51px;
     background: #2A7AE4;
@@ -442,8 +395,8 @@ textarea{
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-    order: 2;
-    flex-grow: 0;                               
+    margin-top: 35px;
+                             
 }
 .programado{
     display: flex;
@@ -458,6 +411,21 @@ textarea{
     flex: none;
     order: 1;
     align-self: stretch;
+    flex-grow: 0;
+}
+
+.programado p{
+    width: 229px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 0;
     flex-grow: 0;
 }
 

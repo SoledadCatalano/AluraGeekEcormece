@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/ver-producto.css">
+    <title>Ver producto</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <section>
+              
+                <div class="logo-buscar" >
+                  <a href="../index.html"><img class="logo" src="../assets/imagenes/Logo.png" alt=""></a>
+                    <div class="barra-buscar">
+                        <input  name="buscador" type="text" id="buscar" class="input-buscar" placeholder="  ¿Qué deseas buscar?" maxlength="50">
+                        <img class="logo-buscar" src="../assets/imagenes/Vector.png" alt="">
+                    </div>
+                </div>    
+
+                <a class="boton-login" href= "login.html" > Login</a>
+
+            </section> 
+        </nav>
+              
+    </header>
+    <main class="">
+        <h2 class="titulo-producto"data-name></h2>
+        <section class="form-producto">
+          
+            <div class="imagen-producto">
+                <img  data-foto src = "" alt="">
+            </div>
+            <div>
+                <div class="producto">
+                    <label class="etiqueta" for="categoria">Categoría</label>
+                    <h3 data-categoria></h3>   
+                </div>
+
+                <div class="producto">
+                    <label class="etiqueta" for="precio">Precio del producto</label>
+                    <h3  data-precio></h3> 
+
+                <div class="producto-descripcion">
+                    <label class="etiqueta" for="precio">Descripción del producto</label>
+                    <h3  data-descripcion></h3>                 
+                </div>
+            </div>
+        </section>  
+
+ 
+    <section class="seccion-producto">
+       
+        <h2 class="texto-categoria">Productos Similares</h2>
+        
+        <div class="productos" data-categoria>
+       
+           
+          
+            <div class="card" datos-productos>
+
+            </div>
+             <!-- 
+            </div>
+            <div>
+            <div id="id-consolas" class="texto-categoria">
+                <h2>Consolas</h2>
+                <a href=""> <p> Ver todo</p> <img src="assets/imagenes/vector-flecha.png" alt=""></a>            
+            </div>
+            </div>
+
+            <div class="card" datos-productos-consolas>
+            </div>
+        <div>
+            <div class="texto-categoria">
+                <h2>Varios</h2>
+                <a href=""> <p> Ver todo</p> <img src="assets/imagenes/vector-flecha.png" alt=""></a>            
+            </div>
+            
+            <div class="card" datos-productos-varios>
+            </div>
+        </div> -->
+    </section> 
+</main>
+   
+    <section class="rodape">
+        <footer>
+            <section class="contenido">
+            <div class="izquierda">
+                <div class="logo">
+                    <img src="../assets/imagenes/Logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="">Quienes Somos</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Programa de fidelidad</a></li>
+                    <li><a href="">Nuestras tiendas</a></li>
+                    <li><a href="">Quiero ser franquiciario</a></li>
+                    <li><a href="">Anuncie aquí</a></li>
+                </ul>
+            </div>
+            <form class="formulario-contacto">            
+                <h2>Hable con nosotros</h2>
+
+                <div class="campos-form">
+                    <div class="input-container">
+                        <label for="nombre" class="etiqueta">Nombre</label>
+                        <input  name="name" type="text" id="nombre" class="input" required data-tipo="nombre"  placeholder="Pablo Fernandez" maxlength="50">
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="textarea-container">   
+                        <textarea name="mensaje" id="mensaje" class="textarea" placeholder="  Escribe tu mensaje" data-tipo="elmensaje" maxlength="300" required></textarea>
+                        <span class="textarea-message-error">Este campo no es valido</span>
+                    </div>
+                </div>
+                        <input type="submit" value="Enviar Mensaje"class="enviar">
+               
+            </form>
+            </section>
+        </footer>
+        <div class="programado">
+            <p class="footer">Programado por María Soledad Catalano - Curso Alura Julio 2022</p>   
+        </div>
+    </section>
+
+   
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+<script type="module" src="../controllers/ver-producto-controller.js"></script>
+<script type ="module" src="controllers/buscador.controller.js"></script>
+<script type="module" src="/js/app.js" type="module" ></script>
+</body>
+
+
+</html>

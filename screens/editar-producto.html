@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/editar-producto.css">
+    <title>Alura Geek</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <section>
+              
+                <div class="logo-buscar" >
+                  <a href="../index.html"><img class="logo" src="../assets/imagenes/Logo.png" alt=""></a>
+                    <div class="barra-buscar">
+                        <input  name="buscador" type="text" id="buscar" class="input-buscar" placeholder="  ¿Qué deseas buscar?" maxlength="50" data-buscador>
+                        <img class="logo-buscar" src="../assets/imagenes/Vector.png" alt="">
+                    </div>
+                </div>    
+
+                <a class="boton-login" href= "login.html" > Login</a>
+
+            </section> 
+        </nav>
+              
+    </header>
+    <main class="">
+        <h2 class="titulo-editar">Editar producto</h2>
+        <section class="form-editar">
+          
+          <div class="imagen-editar">
+          <img  data-foto src = "" alt="">
+          </div>
+          <form action="" data-form>
+          
+            <div class="input-container">
+                <label class="etiqueta" for="url-imagen">URL de imagen</label>
+                <input
+                name="url-imagen"
+                id="id-url"
+                class="input"
+                type="text"
+                placeholder="escribe la url de la imagen"
+                required
+                data-url
+              />
+            <span class="input-message-error">Este campo no es valido</span>
+            </div>
+
+            <div class="input-container">
+                <label class="etiqueta" for="categoria">Categoría</label>
+                <input
+                  name="categoria"
+                  id="id-categoria"
+                  class="input"
+                  type="text"
+                  placeholder="Escribe la categoria"
+                  required
+                  data-categoria
+                />               
+                <span class="input-message-error">Este campo no es valido</span>
+              </div>
+
+              <div class="input-container">
+                <label class="etiqueta" for="nombre">Nombre del Producto</label>
+                <input
+                  name="nombre"
+                  id="id-nombre"
+                  class="input"
+                  type="text"
+                  placeholder="Producto XYZ"
+                  required
+                  data-name
+                />
+              
+                <span class="input-message-error">Este campo no es valido</span>
+              </div>
+
+
+            <div class="input-container">
+                <label class="etiqueta" for="precio">Precio del producto</label>
+                <input
+                name="precio"
+                id="id-precio"
+                class="input"
+                type="text"
+                placeholder="$60.00"
+                required
+                data-precio
+              />
+           
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            
+            <div class="input-container descripcion">
+              <input
+                class="input"
+                name="descripcion"
+                id="id-descripcion"
+                placeholder="Descripción del producto"
+                required
+                data-descripcion
+              />
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <button type="submit" class="boton-editar" data-form-btn>Editar producto</button>
+          </form>
+        </section>  
+      </main>
+   
+    <section class="rodape">
+        <footer>
+            <section class="contenido">
+            <div class="izquierda">
+                <div class="logo">
+                    <img src="../assets/imagenes/Logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="">Quienes Somos</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Programa de fidelidad</a></li>
+                    <li><a href="">Nuestras tiendad</a></li>
+                    <li><a href="">Qiero ser franquiciario</a></li>
+                    <li><a href="">Anuncie aquí</a></li>
+                </ul>
+            </div>
+            <form class="formulario-contacto">            
+                <h2>Hable con nosotros</h2>
+
+                <div class="campos-form">
+                    <div class="input-container">
+                        <label for="nombre" class="etiqueta">Nombre</label>
+                        <input  name="name" type="text" id="nombre" class="input" required data-tipo="nombre"  placeholder="Pablo Fernandez" maxlength="50">
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="textarea-container">   
+                        <textarea name="mensaje" id="mensaje" class="textarea" placeholder="  Escribe tu mensaje" data-tipo="elmensaje" maxlength="300" required></textarea>
+                        <span class="textarea-message-error">Este campo no es valido</span>
+                    </div>
+                </div>
+                        <input type="submit" value="Enviar Mensaje"class="enviar">
+               
+            </form>
+            </section>
+        </footer>
+        <div class="programado">
+            <p class="footer">Programado por María Soledad Catalano - Curso Alura Julio 2022</p>   
+        </div>
+    </section>
+
+   
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+<script type="module" src="../controllers/editar-producto-controller.js"></script>
+<script type ="module" src="../controllers/buscador.controller.js"></script>
+    <script type ="module" src="../controllers/buscar.controller.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/_reset.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilos-validar.css">
+
+    <title>Alura Geek</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <section>
+              
+                <div class="logo-buscar" >
+                  <a href="index.html">  <img class="logo" src="assets/imagenes/Logo.png" alt=""></a>
+                    <div class="barra-buscar">
+                        <input  name="buscador" type="text" id="buscar" class="input-buscar" placeholder="  ¿Qué deseas buscar?" maxlength="50" data-buscador>
+                        <img class="logo-buscar" src="assets/imagenes/Vector.png" alt="">
+                    </div>
+                </div>    
+               
+                    <a class="boton-login" href= "/screens/login.html" > Login</a>
+                    
+            </section> 
+        </nav>
+        
+        <section class="promo">
+                <div>                    
+                    <h2>Julio Promocional</h2>
+                    <p>Productos seleccionados con 33% de descuento</p>
+                    <a href="/screens/buscar-productos.html?texto=consolas"><button> <p>Ver Consolas</p> </button></a>
+                </div>
+        </section>
+    </header>
+
+    <section class="seccion-producto">
+        <div class="productos">
+       
+            <div class="texto-categoria">
+                <h2>Star Wars</h2>
+                <a href=""> <p> Ver todo</p> <img class="flecha" src="assets/imagenes/vector-flecha.png" alt=""></a>            
+            </div>
+            
+            <div class="card" datos-productos>
+            </div>
+            </div>
+            <div>
+            <div id="id-consolas" class="texto-categoria">
+                <h2>Consolas</h2>
+                <a href=""> <p> Ver todo</p> <img class="flecha" src="assets/imagenes/vector-flecha.png" alt=""></a>            
+            </div>
+            </div>
+
+            <div class="card" datos-productos-consolas>
+            </div>
+        <div>
+            <div class="texto-categoria">
+                <h2>Varios</h2>
+                <a href=""> <p> Ver todo</p> <img class="flecha" src="assets/imagenes/vector-flecha.png" alt=""></a>            
+            </div>
+            
+            <div class="card" datos-productos-varios>
+            </div>
+        </div>
+    </section>  
+    <section class="rodape">
+        <footer>
+            <section class="contenido">
+            <div class="izquierda">
+                <div class="logo">
+                    <img src="assets/imagenes/Logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="">Quienes Somos</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Programa de fidelidad</a></li>
+                    <li><a href="">Nuestras tiendas</a></li>
+                    <li><a href="">Quiero ser franquiciario</a></li>
+                    <li><a href="">Anuncie aquí</a></li>
+                </ul>
+            </div>
+            <form>            
+                <h2>Hable con nosotros</h2>
+
+                <div class="campos-form">
+                    <div class="input-container">
+                        <label for="nombre" class="etiqueta">Nombre</label>
+                        <input  name="name" type="text" id="nombre" class="input" required data-tipo="nombre"  placeholder="Pablo Fernandez" maxlength="50">
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="textarea-container">   
+                        <textarea name="mensaje" id="mensaje" class="textarea" placeholder="  Escribe tu mensaje" data-tipo="elmensaje" maxlength="300" required></textarea>
+                        <span class="textarea-message-error">Este campo no es valido</span>
+                    </div>
+                </div>
+                        <input type="submit" value="Enviar Mensaje"class="enviar">
+               
+            </form>
+            </section>
+        </footer>
+        <div class="programado">
+            <p class="footer">Programado por María Soledad Catalano - Curso Alura Julio 2022</p>  
+        </div>
+    </section>
+<script type= "module" src="controllers/productos-controller.js"></script>
+<script type ="module" src="controllers/buscador.controller.js"></script>
+<script type="module" src="/js/app.js" type="module" ></script>
+<script src=""></script>
+
+
+   
+    
+</body>
+
+</html>
