@@ -1,8 +1,8 @@
-const listaProductos= () => fetch("https://friendly-frangipane-6b3b13.netlify.app/db.json").then(respuesta => respuesta.json());
+const listaProductos= () => fetch("https://ecommerce-juliandevz.herokuapp.com/productos").then(respuesta => respuesta.json());
 
 const crearproducto = (nombre,url,precio,categoria,descripcion) => 
 {
-    return fetch("https://friendly-frangipane-6b3b13.netlify.app/db.json", {
+    return fetch("https://ecommerce-juliandevz.herokuapp.com/productos", {
         method:"POST",
         headers:{
             "Content-Type":"application/json",
@@ -26,19 +26,19 @@ const crearproducto = (nombre,url,precio,categoria,descripcion) =>
 
 //esto es para ver el detalle
 const detalleProducto = (id) => {
-    return fetch(`https://friendly-frangipane-6b3b13.netlify.app/db.json/${id}`).then(respuesta =>
+    return fetch(`https://ecommerce-juliandevz.herokuapp.com/productos/${id}`).then(respuesta =>
       respuesta.json()
     );
   };
 
   const eliminarProducto = (id) => {
-    return fetch(`https://friendly-frangipane-6b3b13.netlify.app/db.json/${id}`, {
+    return fetch(`https://ecommerce-juliandevz.herokuapp.com/productos/${id}`, {
       method: "DELETE",
     });
   };
 
   const actualizarProducto = (nombre,url,precio,categoria,descripcion,id) => {
-    return fetch(`https://friendly-frangipane-6b3b13.netlify.app/db.json/${id}`, {
+    return fetch(`https://ecommerce-juliandevz.herokuapp.com/productos/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
