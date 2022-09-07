@@ -1,8 +1,8 @@
-const listaProductos= () => fetch("https://friendly-frangipane-6b3b13.netlify.app/db").then(respuesta => respuesta.json());
+const listaProductos= () => fetch("https://friendly-frangipane-6b3b13.netlify.app/producto").then(respuesta => respuesta.json());
 
 const crearproducto = (nombre,url,precio,categoria,descripcion) => 
 {
-    return fetch("https://friendly-frangipane-6b3b13.netlify.app/db", {
+    return fetch("https://friendly-frangipane-6b3b13.netlify.app/producto", {
         method:"POST",
         headers:{
             "Content-Type":"application/json",
@@ -26,19 +26,19 @@ const crearproducto = (nombre,url,precio,categoria,descripcion) =>
 
 //esto es para ver el detalle
 const detalleProducto = (id) => {
-    return fetch(`https://friendly-frangipane-6b3b13.netlify.app/db/${id}`).then(respuesta =>
+    return fetch(`https://friendly-frangipane-6b3b13.netlify.app/producto/${id}`).then(respuesta =>
       respuesta.json()
     );
   };
 
   const eliminarProducto = (id) => {
-    return fetch(`https://friendly-frangipane-6b3b13.netlify.app/db/${id}`, {
+    return fetch(`https://friendly-frangipane-6b3b13.netlify.app/producto/${id}`, {
       method: "DELETE",
     });
   };
 
   const actualizarProducto = (nombre,url,precio,categoria,descripcion,id) => {
-    return fetch(`https://friendly-frangipane-6b3b13.netlify.app/db/${id}`, {
+    return fetch(`https://friendly-frangipane-6b3b13.netlify.app/producto/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
