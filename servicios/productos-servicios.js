@@ -2,7 +2,7 @@ const listaProductos= () => fetch("https://632cf1980d7928c7d24306e5.mockapi.io/p
 
 const crearproducto = (nombre,url,precio,categoria,descripcion) => 
 {
-    return fetch("https://632cf1980d7928c7d24306e5.mockapi.io/productos", {
+    return fetch("https://632cf1980d7928c7d24306e5.mockapi.io/alura", {
         method:"POST",
         headers:{
             "Content-Type":"application/json",
@@ -26,19 +26,19 @@ const crearproducto = (nombre,url,precio,categoria,descripcion) =>
 
 //esto es para ver el detalle
 const detalleProducto = (id) => {
-    return fetch(`https://632cf1980d7928c7d24306e5.mockapi.io/productos/${id}`).then(respuesta =>
+    return fetch(`https://632cf1980d7928c7d24306e5.mockapi.io/alura/${id}`).then(respuesta =>
       respuesta.json()
     );
   };
 
   const eliminarProducto = (id) => {
-    return fetch(`https://632cf1980d7928c7d24306e5.mockapi.io/productos/${id}`, {
+    return fetch(`https://632cf1980d7928c7d24306e5.mockapi.io/alura/${id}`, {
       method: "DELETE",
     });
   };
 
   const actualizarProducto = (nombre,url,precio,categoria,descripcion,id) => {
-    return fetch(`https://632cf1980d7928c7d24306e5.mockapi.io/productos/${id}`, {
+    return fetch(`https://632cf1980d7928c7d24306e5.mockapi.io/alura/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
