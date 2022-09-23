@@ -1,5 +1,4 @@
-{
-  "producto": [
+[
     {
       "nombre": "Dart Maul",
       "url": "https://raw.githubusercontent.com/SoledadCatalano/AluraGeekEcormece/main/assets/imagenes/starwars%20(1).png",
@@ -138,4 +137,3 @@
     }
     
   ]
-}
