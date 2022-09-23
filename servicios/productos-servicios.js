@@ -1,8 +1,8 @@
-const listaProductos= () => fetch("https://632cf1980d7928c7d24306e5.mockapi.io/productos").then(respuesta => respuesta.json());
+const listaProductos= () => fetch("https://solecata.000webhostapp.com/db.json").then(respuesta => respuesta.json());
 
 const crearproducto = (nombre,url,precio,categoria,descripcion) => 
 {
-    return fetch("https://632cf1980d7928c7d24306e5.mockapi.io/alura", {
+    return fetch("https://solecata.000webhostapp.com/db.json", {
         method:"POST",
         headers:{
             "Content-Type":"application/json",
@@ -26,19 +26,19 @@ const crearproducto = (nombre,url,precio,categoria,descripcion) =>
 
 //esto es para ver el detalle
 const detalleProducto = (id) => {
-    return fetch(`https://632cf1980d7928c7d24306e5.mockapi.io/alura/${id}`).then(respuesta =>
+    return fetch(`https://solecata.000webhostapp.com/db.json/${id}`).then(respuesta =>
       respuesta.json()
     );
   };
 
   const eliminarProducto = (id) => {
-    return fetch(`https://632cf1980d7928c7d24306e5.mockapi.io/alura/${id}`, {
+    return fetch(`https://solecata.000webhostapp.com/db.json/${id}`, {
       method: "DELETE",
     });
   };
 
   const actualizarProducto = (nombre,url,precio,categoria,descripcion,id) => {
-    return fetch(`https://632cf1980d7928c7d24306e5.mockapi.io/alura/${id}`, {
+    return fetch(`https://solecata.000webhostapp.com/db.json/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
